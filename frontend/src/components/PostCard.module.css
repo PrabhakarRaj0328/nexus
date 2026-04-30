@@ -1,0 +1,37 @@
+.card {
+  display: flex; gap: 16px;
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 20px;
+  transition: all 0.2s; cursor: pointer;
+}
+.card:hover {
+  border-color: var(--border2);
+  background: var(--bg3);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+.vote {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 4px; min-width: 36px;
+}
+.voteBtn {
+  background: var(--bg3); border: 1px solid var(--border);
+  border-radius: 6px; color: var(--text3);
+  width: 32px; height: 28px; font-size: 12px;
+  transition: all 0.15s;
+}
+.voteBtn:hover:not(:disabled) {
+  border-color: var(--accent); color: var(--accent); background: var(--accent-glow);
+}
+.voteBtn:disabled { cursor: not-allowed; }
+.voted { background: var(--accent-glow) !important; border-color: var(--accent) !important; color: var(--accent) !important; }
+.count { font-size: 14px; font-weight: 600; color: var(--text2); }
+.body { flex: 1; min-width: 0; }
+.meta { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; flex-wrap: wrap; }
+.title {
+  font-size: 17px; font-weight: 500; color: var(--text);
+  margin-bottom: 8px; line-height: 1.4;
+}
+.excerpt { color: var(--text2); font-size: 14px; line-height: 1.6; margin-bottom: 12px; }
+.footer { display: flex; gap: 16px; }
+.stat { font-size: 13px; color: var(--text3); }

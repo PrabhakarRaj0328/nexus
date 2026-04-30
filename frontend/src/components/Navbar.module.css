@@ -1,0 +1,29 @@
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(10, 10, 15, 0.85);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  height: 64px;
+}
+.inner {
+  display: flex; align-items: center;
+  justify-content: space-between; height: 100%;
+}
+.logo {
+  display: flex; align-items: center; gap: 10px;
+  font-weight: 600; font-size: 18px;
+}
+.logoIcon {
+  font-size: 24px; color: var(--accent);
+  line-height: 1;
+}
+.actions { display: flex; align-items: center; gap: 10px; }
+.avatar {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: var(--bg3); border: 2px solid var(--border2);
+  overflow: hidden; display: flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 600; color: var(--accent2);
+  transition: border-color 0.2s;
+}
+.avatar:hover { border-color: var(--accent); }
+.avatar img { width: 100%; height: 100%; object-fit: cover; }
